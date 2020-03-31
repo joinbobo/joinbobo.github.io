@@ -227,7 +227,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-31 15:39:40 / Modified: 15:58:30" itemprop="dateCreated datePublished" datetime="2020-03-31T15:39:40+08:00">2020-03-31</time>
+              <time title="Created: 2020-03-31 15:39:40 / Modified: 16:23:55" itemprop="dateCreated datePublished" datetime="2020-03-31T15:39:40+08:00">2020-03-31</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -333,8 +333,14 @@
 <td align="left">-1</td>
 </tr>
 </tbody></table>
-<p>$a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2)$<br>$(a\pm b)^3=a^3\pm 3a^2b+3ab^2\pm b^3$</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/31/Notes-Math/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -384,7 +390,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-31 15:15:52" itemprop="dateModified" datetime="2020-03-31T15:15:52+08:00">2020-03-31</time>
+                <time title="Modified: 2020-03-31 16:24:59" itemprop="dateModified" datetime="2020-03-31T16:24:59+08:00">2020-03-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -411,22 +417,14 @@
       
           <h2 id="计算机综合"><a href="#计算机综合" class="headerlink" title="计算机综合"></a>计算机综合</h2><p><a href="https://www.jianshu.com/p/cf36c5af997a" target="_blank" rel="noopener">数学语法</a></p>
 <h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>　　数据结构的主要任务是通过分析数据对象的结构特征，包括逻辑结构及数据对象之间的关系，然后把逻辑结构表示成计算机课实现的物理结构，从而便于计算机处理。</p>
-<h3 id="2-算法"><a href="#2-算法" class="headerlink" title="2. 算法"></a>2. 算法</h3><h4 id="2-1-数据结构和算法的关系"><a href="#2-1-数据结构和算法的关系" class="headerlink" title="2.1 数据结构和算法的关系"></a>2.1 数据结构和算法的关系</h4><p>程序 = 算法 + 数据结构</p>
-<h4 id="2-2-算法的五大特性"><a href="#2-2-算法的五大特性" class="headerlink" title="2.2 算法的五大特性"></a>2.2 算法的五大特性</h4><p>有穷性、确定性、可行性、输入、输出</p>
-<h3 id="3-C语言基础"><a href="#3-C语言基础" class="headerlink" title="3. C语言基础"></a>3. C语言基础</h3><h4 id="3-1-函数递归："><a href="#3-1-函数递归：" class="headerlink" title="3.1 函数递归："></a>3.1 函数递归：</h4><p>（1）直接递归（自己调用自己）<br>（2）间接递归（间接调用自己）</p>
-<p>例1：利用递归求n! ：有两种情况，当n=0递归结束，返回值为1 ；当n !=0时，继续递归。<br>      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int factorial (int n)&#123;</span><br><span class="line">    if(n &#x3D;&#x3D; 0)</span><br><span class="line">        return 1;</span><br><span class="line">     else</span><br><span class="line">         return n*factorial(n-1)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="4-递归与迭代"><a href="#4-递归与迭代" class="headerlink" title="4. 递归与迭代"></a>4. 递归与迭代</h3><p>（1）递归使用的是选择结构<br>（2）迭代使用的是循环结构</p>
-<h3 id="5-指针"><a href="#5-指针" class="headerlink" title="5. 指针"></a>5. 指针</h3><p>　　指针是一种变量，也称之为指针变量。指针的值就是变量的地址，而变量又拥有一个具体的值。因此可以理解为变量名直接引用一个值，指针间接地引用了一个值。<br>　　指针数组是一种存放一组变量的地址，数组指针可以进行自增或自减运算，但是数组名则不能进行自增或自减运算。</p>
-<h3 id="6-结构体和联合体"><a href="#6-结构体和联合体" class="headerlink" title="6. 结构体和联合体"></a>6. 结构体和联合体</h3><p>　　也称共用体，是自定义的数据类型，用于构造非数值数据类型，在处理实际问题中应用非常广泛。数据结构中的链表、队列、树、图等结构都需要用到结构体。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结构体类型</span><br><span class="line">struct teacher&#123;</span><br><span class="line">&#x2F;&#x2F;数据项</span><br><span class="line">    int no;</span><br><span class="line">    char name[20]</span><br><span class="line">    char sex[4];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>联合体与结构体一样，也是一种派生的数据类型。不同的是联合体的成员共享同一个存储空间。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;联合体类型</span><br><span class="line">union data&#123;</span><br><span class="line">    int a;</span><br><span class="line">    float b;</span><br><span class="line">    char c;</span><br><span class="line">&#125;abc;</span><br></pre></td></tr></table></figure>
-<h3 id="7-链表"><a href="#7-链表" class="headerlink" title="7. 链表"></a>7. 链表</h3><p>　　链表可以动态分配内存，链表的长度随时可以发生变化。链表有一个指针类型的成员指向自身，该指针指向与结构体一样的类型。例如以下语句：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">struct node&#123;</span><br><span class="line">    int data</span><br><span class="line">    struct data *next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>　　子引用结构体类型为struct node，该结构体类型有两个成员：整数成员data、指针成员next。成员next是指向结构体为struct node类型的指针。通过这种形式定义的结构体通过next指针把两个结构体变量连在一起。这种子引用结构体单元称为结点，结点之间通过箭头链接起来，构成一张表，称为链表。</p>
-<h3 id="8-内存的分配与释放"><a href="#8-内存的分配与释放" class="headerlink" title="8. 内存的分配与释放"></a>8. 内存的分配与释放</h3><p>（1）malloc函数主要作用是分配一块长度为size的内存空间。void *malloc(unsigned int size); 其中，size就是要分配的内存空间大小字节。<br>（2）free函数主要作用是将内存空间释放。void free(void *p); 其中，参数p指向要释放的内存空间。不能使用已经被free函数释放的内存空间。</p>
-<hr>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/30/Notes/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -468,10 +466,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-01-22 16:11:13 / Modified: 16:11:23" itemprop="dateCreated datePublished" datetime="2020-01-22T16:11:13+08:00">2020-01-22</time>
+              <time title="Created: 2020-01-22 16:11:13" itemprop="dateCreated datePublished" datetime="2020-01-22T16:11:13+08:00">2020-01-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-31 16:24:12" itemprop="dateModified" datetime="2020-03-31T16:24:12+08:00">2020-03-31</time>
+              </span>
 
           
 
@@ -486,31 +490,14 @@
       
           <h1 id="Windows10安装"><a href="#Windows10安装" class="headerlink" title="Windows10安装"></a>Windows10安装</h1><p>这里默认已安装！</p>
 <h1 id="Ubuntua安装"><a href="#Ubuntua安装" class="headerlink" title="Ubuntua安装"></a>Ubuntua安装</h1><h2 id="1-准备工具"><a href="#1-准备工具" class="headerlink" title="1. 准备工具"></a>1. 准备工具</h2><p>1）下载一个最新镜像，建议在<a href="http://mirrors.163.com/ubuntu-releases/" target="_blank" rel="noopener">网易开源镜像站</a>下载对应的32位与64位包，官网：<a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener">https://ubuntu.com/download/desktop</a><br>2）软碟通，光盘映像文件制作/编辑/转换工具<a href="https://cn.ultraiso.net/xiazai.html" target="_blank" rel="noopener">https://cn.ultraiso.net/xiazai.html </a><br>3）准备一个大于8GB的U盘</p>
-<h2 id="2-压缩卷"><a href="#2-压缩卷" class="headerlink" title="2. 压缩卷"></a>2. 压缩卷</h2><p>首先划分一片内存专门为Ubuntu使用，就好似我要在某个地方建一座房子，首先我得划分一块地，才能建</p>
-<p>压缩完之后会有一块未分配的内存，这里的内存我给了<strong>40G</strong>也就是<strong>40960M</strong>，所以下图分区会有一个<strong>40G</strong>的未分配区域</p>
-<p>“win+x“ -&gt; “磁盘管理” -&gt; “（选择磁盘）-&gt; ”压缩卷“ -&gt; “输入压缩空间量：40960（这里的内存切合个人实际内存）</p>
-<p><img src="https://img-blog.csdnimg.cn/20191012181448623.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191012181652226.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="3-制作光盘映像文件"><a href="#3-制作光盘映像文件" class="headerlink" title="3. 制作光盘映像文件"></a>3. 制作光盘映像文件</h2><p>这是用于将ISO系统文件刻录成启动盘的工具，插入U盘，以管理员身份运行“软碟通”，快捷键“Ctrl+O”找到之前下载的最新系统打开，“启动” -&gt; “写入硬盘映像” -&gt; “写入”</p>
-<p><img src="https://img-blog.csdnimg.cn/20191014152423482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>需要注意的是写入方式设置为——<strong>“USB+HDD+”</strong>（如果不是这个模式，可能导致电脑无法通过U盘正常启动）<br><img src="https://img-blog.csdnimg.cn/20191014153006397.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>U盘启动盘做好之后，我们就需要重启进入电脑Boot menu<br>以下是一些常见启动菜单的快捷键<br><img src="https://img-blog.csdnimg.cn/2019101415505233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="4-安装Ubuntu"><a href="#4-安装Ubuntu" class="headerlink" title="4. 安装Ubuntu"></a>4. 安装Ubuntu</h2><p>重启之后在启动菜单中选择自己的U盘，选择“Install Ubuntu”进入图形界面安装<br>过程中暂时不要安装软件，一路点继续，当问到“这台计算机已经安装了多个操作系统，您准备怎么做？”时，选择底部最后一个选项“其他选项”<br><img src="https://img-blog.csdnimg.cn/20191014155845611.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<blockquote>
-<p>大多数习惯了 Windows 的用户，对 Linux 的树型结构目录不是十分了解，但是不了解就不代表不会用。对于初级用户，一切从简，给 Ubuntu 四个分区，分别是根目录’/‘、交换空间 swap、引导分区目录’/boot’和 home 目录’/home’。根目录主要存储系统、软件还有一些其他文件，所有的文件都是由根目录衍生来的，所以这个分区尽可能大一点，至于具体如何规划这个分区不是现在需要考虑的。交换空间 swap 又叫做虚拟物理内存，它的功能计算机内存不太够用的时候存储那些不经常被 CPU 使用的程序，如果你的系统不是很忙，这个分区可以不需要。打个比方来理解引导分区目录，引导分区目录是摆在计算机开机时选择进入何种系统的 “大门”，没有这张“大门”，就算有了“钥匙” 也没有用。home 目录的作用理解为 Linux 各个用户下共享的文件夹。</p>
-</blockquote>
-<p>接下来选择之前划分好的空间，也就是“空闲”，点击加号，分配空间（四次）<br><img src="https://img-blog.csdnimg.cn/20191014160305721.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>分区 | 挂载点 | 大小 | 新分区类型 | 空间起始位置用于<br>——- | —— | —— | ——–| ——|<br>第一次分区 | / | 10240MB | 主分区 | EXT4 日志文件系统<br>第二次分区 | 不设置 | 4096MB | 逻辑分区 | 交换空间<br>第三次分区 | /boot | 400MB | 逻辑分区 | EXT4 日志文件系统<br>第四次分区 | /home | 剩余全部空间 | 逻辑分区 | EXT4 日志文件系统<br>&nbsp;</p>
-<p>==”第四次分区”完成后请不要马上点击“安装”!!!==</p>
-<p>&nbsp;<br>&nbsp;<br>分区完成之后，下方有项“安装启动引导器的设备”，如果默认该项，将是Ubuntu引导Windows，这里需要将该项<strong>设置为之前分区 “/boot” 所在分区的盘符</strong>，再点击“安装”<br><img src="https://img-blog.csdnimg.cn/201910141641229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>安装后系统提示“重启”，重启之后回车“Ubuntu”，或者无操作自动进入Ubuntu，会发现屏幕一直是同一个颜色，并且无响应<br>不要担心，电脑并没有变成砖块，只是系统底层“安全启动”在阻碍“Ubuntu系统”的启动</p>
-<p>只要显示过如下图的页面，你就已经成功安装<br><img src="https://img-blog.csdnimg.cn/20191014165314266.png" alt="在这里插入图片描述"><br>解决方法：<br>关闭“安全启动”<br>如上图页面，选择最后一个选项，便直接进入Bios，选择“Security” -&gt; “Secure Boot” -&gt; “ Disabled”<br><img src="https://img-blog.csdnimg.cn/20191014195450561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191014195527109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>“Enabled”：开启<br>“Disabled”：禁用<br>这里选择“禁用”，Esc返回上一层保存退出</p>
-<h2 id="5-安装-EasyBCD-2-3"><a href="#5-安装-EasyBCD-2-3" class="headerlink" title="5. 安装 EasyBCD 2.3"></a>5. 安装 EasyBCD 2.3</h2><p>这个软件是用于系统配置创建多重启动系统的引导文件<br>“添加新条目” -&gt; “Linux/BSD” -&gt; 类型“GRUB(Legacy)” -&gt; “选择驱动器(/boot)” -&gt; “添加条目”</p>
-<p>保存重启<br><img src="https://img-blog.csdnimg.cn/20191016094912923.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>当开机后有如下“NeSmart Linux”选项便大功告成！<br><img src="https://img-blog.csdnimg.cn/20191016095928326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTQxMTc5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>ps：</p>
-<ul>
-<li>需要注意的是笔记本带有独立显卡的友友注意了，在插入U盘安装（光标移动到 instll ubuntu处)时，按下“E”键，进入编辑模式，把”—“改成”nomodeset”，防止系统安装过程中卡死无响应（不支持独显导致），F10保存进入安装界面</li>
-<li>支持UEFI启动的本子，理论预装win8/win10都支持，将教程上方 /boot 分区修改成 /efi 分区，“安装启动引导器的设备”修改成 /efi 分区所在盘符。（提升启动速度，详情百度参考）</li>
-</ul>
-<p><a href="https://blog.csdn.net/mtllyb/article/details/78635757" target="_blank" rel="noopener">→彻底删除EFI分区及启动项</a></p>
-<p><em>参考教程：<a href="https://www.libinx.com/2017/five-steps-win10-ubuntu-dual-boot/" target="_blank" rel="noopener">https://www.libinx.com/2017/five-steps-win10-ubuntu-dual-boot/</a></em></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/01/22/Windows10-Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
