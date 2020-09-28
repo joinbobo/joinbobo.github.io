@@ -28,7 +28,7 @@
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -104,6 +104,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Kevin's blog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -188,10 +189,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -529,11 +526,18 @@
       <span class="links-of-author-item">
         <a href="https://weibo.com/3315613265/profile?topnav=1&wvr=6&is_all=1" title="禁止暧昧 → https:&#x2F;&#x2F;weibo.com&#x2F;3315613265&#x2F;profile?topnav&#x3D;1&amp;wvr&#x3D;6&amp;is_all&#x3D;1" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>禁止暧昧</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
   </div>
 
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -552,7 +556,8 @@
   &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <!--上方修改底部人物图标 成 爱心图标 <i class="fa fa-user"></i> -->
   </span>
   <!--底部时间 名字后面的内容-->
   <span class="author" itemprop="copyrightHolder">Kevin</span>
@@ -580,6 +585,7 @@
     Life is but a span
     <!-- v7.7.0-->
   </div>
+
 
 
 
@@ -620,6 +626,8 @@
   </div>
 
   
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
